@@ -6,10 +6,10 @@ class Persona:
         self.edad = edad      # atributo
 
     def saludar(self):
-       print(f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años.")
+        print(f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años.")
 
     def cambiar_especie_a_cada_objeto(self, nueva_especie):
-       self.especie = nueva_especie
+        self.especie = nueva_especie
 
     @classmethod
     def cambiar_especie(cls, nueva_especie):

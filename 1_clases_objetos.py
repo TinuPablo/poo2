@@ -4,7 +4,7 @@ class Persona:
         self.nombre = nombrepersona  # atributo
         self.edad = edad      # atributo
     def saludar(self, saludo):
-       print(f"{saludo}, mi nombre es {self.nombre} y tengo {self.edad} años.")
+        print(f"{saludo}, mi nombre es {self.nombre} y tengo {self.edad} años.")
 
 
 # Crear un objeto (instancia de la clase)

@@ -7,14 +7,14 @@ class Persona:
         self.__password= "1234"
 
     def saludar(self):
-       print(f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años.")
+        print(f"Hola, mi nombre es {self.nombre} y tengo {self.edad} años.")
 
     def _gastar_energia(self, cantidad):
         self._energia -= cantidad
         return self._energia
 
     def __generar_password(self):
-         return f"{self.nombre}{self.edad}"
+        return f"{self.nombre}{self.edad}"
 
 
 # Crear un objeto (instancia de la clase)

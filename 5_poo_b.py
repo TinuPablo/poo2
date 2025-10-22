@@ -7,7 +7,7 @@ class CuentaBancaria(ABC):
 
     @abstractmethod
     def depositar(self, monto):
-       pass
+        pass
 
     def _get_saldo(self):
         return self.__saldo
@@ -17,7 +17,7 @@ class CuentaBancaria(ABC):
 
     @abstractmethod
     def retirar(self, valor):
-       pass
+        pass
 
     def mostrar_saldo(self):
         return f"Saldo actual: ${self.__saldo}"
@@ -34,10 +34,10 @@ class CuentaCorriente(CuentaBancaria):  # Herencia
             print("Fondos insuficientes en la cuenta de ahorro")
 
     def depositar(self, monto):
-         if monto > 0:
-             descuento = monto * 0.05
-             total = monto - descuento
-             self._set_saldo(self._get_saldo() + total)
+        if monto > 0:
+            descuento = monto * 0.05
+            total = monto - descuento
+            self._set_saldo(self._get_saldo() + total)
 
 
 class Cuentadeahorros(CuentaBancaria):  # Herencia
